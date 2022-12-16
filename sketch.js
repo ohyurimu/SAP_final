@@ -1,9 +1,9 @@
-var button;
+/*var button;*/
 
 let button;
 let permission = false;
 
-var wave1;
+/*var wave1;
 var wave2;
 var wave3;
 var wave4;
@@ -19,18 +19,20 @@ var playing4 = false;
 var playing5 = false;
 var playing6 = false;
 var playing7 = false;
-var playing8 = false;
+var playing8 = false;*/
 
 function setup() {
     if (typeof DeviceMotionEvent.requestPermission === "function") {
+        background(255, 0, 0);
         button = createButton("Click to IOS sensor");
         button.mousePressed(iosAccess);
     } else {
-        text("Is not an IOS Device", 100, 100);
+        background(0, 255, 0);
+        text("Is not an IOS16 Device", 100, 100);
     }
 
     /*createCanvas(250, 350);*/
-    wave1 = new p5.Oscillator();
+    /*wave1 = new p5.Oscillator();
     wave1.setType('sine');
 
     wave2 = new p5.Oscillator();
@@ -77,7 +79,7 @@ function setup() {
     button.touchStarted(toggle7);
   
     button = createButton('도');
-    button.touchStarted(toggle8);
+    button.touchStarted(toggle8);*/
 }
 
 function iosAccess() {
@@ -94,43 +96,12 @@ function draw() {
     text(rotationX, 100, 100);
 }
 
-function touchStarted() {
-    /*background(255, 255, 0);
-    text(touches.length, 200, 200);
+/*function touchStarted() {
 
-    text(touches[0].x, 200, 220);
-    text(touches[0].y, 200, 240);
-
-    text(touches[1].x, 200, 260);
-    text(touches[1].y, 200, 280);
-
-    text(touches[2].x, 200, 300);
-    text(touches[2].y, 200, 320);
-
-    text(touches[3].x, 200, 340);
-    text(touches[3].y, 200, 360);
-    
-    text(touches[4].x, 200, 380);
-    text(touches[4].y, 200, 400);
-
-    text(touches[5].x, 200, 420);
-    text(touches[5].y, 200, 440);
-
-    text(touches[6].x, 200, 460);
-    text(touches[6].y, 200, 480);
-
-    text(touches[7].x, 200, 500);
-    text(touches[7].y, 200, 520);
-
-    text(touches[8].x, 200, 540);
-    text(touches[8].y, 200, 560);
-
-    text(touches[9].x, 200, 580);
-    text(touches[9].y, 200, 600);*/
 }
 
 function touchEnded() {
-    /*background(255, 255, 255);*/
+
 }
 
 function toggle1() {
@@ -275,4 +246,4 @@ function toggle8() {
             playing8 = false;
         }
     }
-}
+}*/
