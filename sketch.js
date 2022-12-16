@@ -9,7 +9,7 @@ function setup() {
 
 
     button = createButton('도');
-    button.touchStarted(toggle1);
+    button.mousePressed(toggle1);
   
     button = createButton('레');
     button.touchStarted(toggle2);
