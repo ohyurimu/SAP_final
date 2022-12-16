@@ -42,34 +42,34 @@ function touchStarted() {
     text(touches.length, 200, 200);
 
     text(touches[0].x, 200, 220);
-    text(touches[0].x, 200, 240);
+    text(touches[0].y, 200, 240);
 
     text(touches[1].x, 200, 260);
-    text(touches[1].x, 200, 280);
+    text(touches[1].y, 200, 280);
 
     text(touches[2].x, 200, 300);
-    text(touches[2].x, 200, 320);
+    text(touches[2].y, 200, 320);
 
     text(touches[3].x, 200, 340);
-    text(touches[3].x, 200, 360);
+    text(touches[3].y, 200, 360);
     
     text(touches[4].x, 200, 380);
-    text(touches[4].x, 200, 400);
+    text(touches[4].y, 200, 400);
 
     text(touches[5].x, 200, 420);
-    text(touches[5].x, 200, 440);
+    text(touches[5].y, 200, 440);
 
     text(touches[6].x, 200, 460);
-    text(touches[6].x, 200, 480);
+    text(touches[6].y, 200, 480);
 
     text(touches[7].x, 200, 500);
-    text(touches[7].x, 200, 520);
+    text(touches[7].y, 200, 520);
 
     text(touches[8].x, 200, 540);
-    text(touches[8].x, 200, 560);
+    text(touches[8].y, 200, 560);
 
     text(touches[9].x, 200, 580);
-    text(touches[9].x, 200, 600);
+    text(touches[9].y, 200, 600);
 }
 
 function toggle1() {
