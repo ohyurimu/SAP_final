@@ -1,5 +1,7 @@
 var button;
 
+var permission = false;
+
 var wave1;
 var wave2;
 var wave3;
@@ -19,6 +21,13 @@ var playing7 = false;
 var playing8 = false;
 
 function setup() {
+    if (typeof DeviceMotionEvent.requestPermission === "function") {
+        button = createButton("Click to IOS sensor");
+        button.touchStarted(iosAccess);
+    } else {
+        text("Is not an IOS Device", 100, 100);
+    }
+
     /*createCanvas(250, 350);*/
     wave1 = new p5.Oscillator();
     wave1.setType('sine');
@@ -70,8 +79,18 @@ function setup() {
     button.touchStarted(toggle8);
 }
 
-function draw() {
+function iosAccess() {
+    DeviceOrientationEvent.requestPermission().then((response) => {
+        if (response === "granted") {
+            permission = true;
+        }
+    }).catch(console.error);
+}
 
+function draw() {
+    if (!permission) return;
+    textSize(72);
+    text(rotationX, 100, 100);
 }
 
 function touchStarted() {
@@ -110,7 +129,7 @@ function touchStarted() {
 }
 
 function touchEnded() {
-    background(255, 255, 255);
+    /*background(255, 255, 255);*/
 }
 
 function toggle1() {
