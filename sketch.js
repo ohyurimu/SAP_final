@@ -29,6 +29,21 @@ function setup() {
     wave3 = new p5.Oscillator();
     wave3.setType('sine');
 
+    wave4 = new p5.Oscillator();
+    wave4.setType('sine');
+
+    wave5 = new p5.Oscillator();
+    wave5.setType('sine');
+
+    wave6 = new p5.Oscillator();
+    wave6.setType('sine');
+
+    wave7 = new p5.Oscillator();
+    wave7.setType('sine');
+
+    wave8 = new p5.Oscillator();
+    wave8.setType('sine');
+
 
     button = createButton('도');
     button.touchStarted(toggle1);
