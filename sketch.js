@@ -4,25 +4,13 @@ var playing = false;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-
-    //createCanvas(720, 256);
     wave = new p5.Oscillator();
     wave.setType('sine');
-    //wave.start(); //전 자료에서 수정사항
     wave.freq(261.6256);
     wave.amp(0);
 
     button = createButton('도');
     button.mousePressed(toggle);
-
-    /*wave.freq(293.6648);
-    wave.amp(0);
-
-    button = createButton('레');
-    button.mousePressed(toggle);
-
-    button = createButton('미');
-    button.mousePressed(toggle);*/
 }
 
 function draw() {
