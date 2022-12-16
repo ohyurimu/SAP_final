@@ -9,7 +9,28 @@ function setup() {
 
 
     button = createButton('도');
-    button.mousePressed(toggle);
+    button.mousePressed(toggle1);
+  
+    button = createButton('레');
+    button.mousePressed(toggle2);
+  
+    /*button = createButton('미');
+    button.mousePressed(toggle3);
+  
+    button = createButton('파');
+    button.mousePressed(toggle4);
+  
+    button = createButton('솔');
+    button.mousePressed(toggle5);
+  
+    button = createButton('라');
+    button.mousePressed(toggle6);
+  
+    button = createButton('시');
+    button.mousePressed(toggle7);
+  
+    button = createButton('도');
+    button.mousePressed(toggle8);*/
 }
 
 function draw() {
@@ -51,8 +72,27 @@ function touchStarted() {
     text(touches[9].x, 200, 600);
 }
 
-function toggle() {
+function toggle1() {
+  
     wave.freq(261.6256);
+    wave.amp(0);
+
+    if (!playing)
+    {
+        wave.start();
+        wave.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
+        playing = true;
+
+        if (playing){
+            wave.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
+            playing = false;
+        }
+    }
+}
+
+function toggle2() {
+  
+    wave.freq(293.6648);
     wave.amp(0);
 
     if (!playing)
