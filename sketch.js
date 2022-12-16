@@ -9,28 +9,28 @@ function setup() {
 
 
     button = createButton('도');
-    button.mousePressed(toggle1);
+    button.touchStarted(toggle1);
   
     button = createButton('레');
-    button.mousePressed(toggle2);
+    button.touchStarted(toggle2);
   
     button = createButton('미');
-    button.mousePressed(toggle3);
+    button.touchStarted(toggle3);
   
     /*button = createButton('파');
-    button.mousePressed(toggle4);
+    button.touchStarted(toggle4);
   
     button = createButton('솔');
-    button.mousePressed(toggle5);
+    button.touchStarted(toggle5);
   
     button = createButton('라');
-    button.mousePressed(toggle6);
+    button.touchStarted(toggle6);
   
     button = createButton('시');
-    button.mousePressed(toggle7);
+    button.touchStarted(toggle7);
   
     button = createButton('도');
-    button.mousePressed(toggle8);*/
+    button.touchStarted(toggle8);*/
 }
 
 function draw() {
