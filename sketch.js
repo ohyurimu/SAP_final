@@ -1,4 +1,6 @@
-var wave;
+var wave1;
+var wave2;
+var wave3;
 var button;
 var playing1 = false;
 var playing2 = false;
@@ -85,17 +87,17 @@ function touchEnded() {
 
 function toggle1() {
   
-    wave.freq(261.6256);
+    wave1.freq(261.6256);
     //wave.amp(0);
 
     if (!playing1)
     {
-        wave.start();
-        wave.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
+        wave1.start();
+        wave1.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
         playing1 = true;
 
         if (playing1){
-            wave.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
+            wave1.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
             playing1 = false;
         }
     }
@@ -103,17 +105,17 @@ function toggle1() {
 
 function toggle2() {
   
-    wave.freq(293.6648);
+    wave2.freq(293.6648);
     //wave.amp(0);
 
     if (!playing2)
     {
-        wave.start();
-        wave.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
+        wave2.start();
+        wave2.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
         playing2 = true;
 
         if (playing2){
-            wave.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
+            wave2.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
             playing2 = false;
         }
     }
@@ -121,17 +123,17 @@ function toggle2() {
 
 function toggle3() {
   
-    wave.freq(329.6276);
+    wave3.freq(329.6276);
     //wave.amp(0);
 
     if (!playing3)
     {
-        wave.start();
-        wave.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
+        wave3.start();
+        wave3.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
         playing3 = true;
 
         if (playing3){
-            wave.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
+            wave3.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
             playing3 = false;
         }
     }
