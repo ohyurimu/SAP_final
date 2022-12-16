@@ -1,6 +1,7 @@
 var button;
 
-var permission = false;
+let button;
+let permission = false;
 
 var wave1;
 var wave2;
