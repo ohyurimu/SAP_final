@@ -92,13 +92,9 @@ function iosAccess() {
 }
 
 function draw() {
-    if (!permission) {
-        text("Access failed", 100, 100);
-    } else {
-        text("Access successed", 100, 100);
-    }
-    /*textSize(72);
-    text(rotationX, 100, 100);*/
+    if (!permission) return;
+    textSize(72);
+    text(rotationX, 100, 100);
 }
 
 /*function touchStarted() {
