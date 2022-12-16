@@ -24,7 +24,7 @@ var playing8 = false;
 function setup() {
     if (typeof DeviceMotionEvent.requestPermission === "function") {
         button = createButton("Click to IOS sensor");
-        button.touchStarted(iosAccess);
+        button.mousePressed(iosAccess);
     } else {
         text("Is not an IOS Device", 100, 100);
     }
