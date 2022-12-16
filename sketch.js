@@ -38,7 +38,7 @@ function draw() {
 }
 
 function touchStarted() {
-    background(100, 0, 0);
+    background(255, 255, 0);
     text(touches.length, 200, 200);
 
     text(touches[0].x, 200, 220);
@@ -73,7 +73,7 @@ function touchStarted() {
 }
 
 function touchEnded() {
-    background(0, 0, 0);
+    background(255, 255, 255);
 }
 
 function toggle1() {
