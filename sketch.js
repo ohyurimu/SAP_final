@@ -75,7 +75,7 @@ function touchStarted() {
 function toggle1() {
   
     wave.freq(261.6256);
-    wave.amp(0);
+    //wave.amp(0);
 
     if (!playing)
     {
@@ -93,7 +93,7 @@ function toggle1() {
 function toggle2() {
   
     wave.freq(293.6648);
-    wave.amp(0);
+    //wave.amp(0);
 
     if (!playing)
     {
@@ -111,7 +111,7 @@ function toggle2() {
 function toggle3() {
   
     wave.freq(329.6276);
-    wave.amp(0);
+    //wave.amp(0);
 
     if (!playing)
     {
