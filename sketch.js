@@ -22,6 +22,7 @@ var playing7 = false;
 var playing8 = false;*/
 
 function setup() {
+    createCanvas(300, 300);
     if (typeof DeviceMotionEvent.requestPermission === "function") {
         background(255, 0, 0);
         button = createButton("Click to IOS sensor");
