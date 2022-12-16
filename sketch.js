@@ -3,7 +3,7 @@ var button;
 var playing = false;
 
 function setup() {
-    createCanvas(250, 300);
+    createCanvas(250, 350);
     wave = new p5.Oscillator();
     wave.setType('sine');
 
