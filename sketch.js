@@ -13,8 +13,14 @@ var playing8 = false;
 
 function setup() {
     /*createCanvas(250, 350);*/
-    wave = new p5.Oscillator();
-    wave.setType('sine');
+    wave1 = new p5.Oscillator();
+    wave1.setType('sine');
+
+    wave2 = new p5.Oscillator();
+    wave2.setType('sine');
+
+    wave3 = new p5.Oscillator();
+    wave3.setType('sine');
 
 
     button = createButton('도');
