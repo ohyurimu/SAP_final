@@ -1,4 +1,4 @@
-var button;
+/*var button;*/
 
 let button;
 let permission = false;
