@@ -1,7 +1,14 @@
+var button;
+
 var wave1;
 var wave2;
 var wave3;
-var button;
+var wave4;
+var wave5;
+var wave6;
+var wave7;
+var wave8;
+
 var playing1 = false;
 var playing2 = false;
 var playing3 = false;
@@ -29,10 +36,10 @@ function setup() {
     button = createButton('레');
     button.touchStarted(toggle2);
   
-    /*button = createButton('미');
+    button = createButton('미');
     button.touchStarted(toggle3);
   
-    /*button = createButton('파');
+    button = createButton('파');
     button.touchStarted(toggle4);
   
     button = createButton('솔');
@@ -45,7 +52,7 @@ function setup() {
     button.touchStarted(toggle7);
   
     button = createButton('도');
-    button.touchStarted(toggle8);*/
+    button.touchStarted(toggle8);
 }
 
 function draw() {
@@ -141,6 +148,96 @@ function toggle3() {
         if (playing3){
             wave3.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
             playing3 = false;
+        }
+    }
+}
+
+function toggle4() {
+  
+    wave4.freq(349.2282);
+    //wave.amp(0);
+
+    if (!playing4)
+    {
+        wave4.start();
+        wave4.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
+        playing4 = true;
+
+        if (playing4){
+            wave4.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
+            playing4 = false;
+        }
+    }
+}
+
+function toggle5() {
+  
+    wave5.freq(391.9954);
+    //wave.amp(0);
+
+    if (!playing5)
+    {
+        wave5.start();
+        wave5.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
+        playing5 = true;
+
+        if (playing5){
+            wave5.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
+            playing5 = false;
+        }
+    }
+}
+
+function toggle6() {
+  
+    wave6.freq(440.0000);
+    //wave.amp(0);
+
+    if (!playing6)
+    {
+        wave6.start();
+        wave6.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
+        playing6 = true;
+
+        if (playing6){
+            wave6.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
+            playing6 = false;
+        }
+    }
+}
+
+function toggle7() {
+  
+    wave7.freq(493.8833);
+    //wave.amp(0);
+
+    if (!playing7)
+    {
+        wave7.start();
+        wave7.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
+        playing7 = true;
+
+        if (playing7){
+            wave7.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
+            playing7 = false;
+        }
+    }
+}
+
+function toggle8() {
+  
+    wave8.freq(523.2511);
+    //wave.amp(0);
+
+    if (!playing8)
+    {
+        wave8.start();
+        wave8.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
+        playing8 = true;
+
+        if (playing8){
+            wave8.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
+            playing8 = false;
         }
     }
 }
