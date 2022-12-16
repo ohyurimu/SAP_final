@@ -1,9 +1,9 @@
-/*var button;*/
+var button;
 
 let button;
 let permission = false;
 
-/*var wave1;
+var wave1;
 var wave2;
 var wave3;
 var wave4;
@@ -19,7 +19,7 @@ var playing4 = false;
 var playing5 = false;
 var playing6 = false;
 var playing7 = false;
-var playing8 = false;*/
+var playing8 = false;
 
 function setup() {
     createCanvas(300, 300);
@@ -33,7 +33,7 @@ function setup() {
     }
 
     /*createCanvas(250, 350);*/
-    /*wave1 = new p5.Oscillator();
+    wave1 = new p5.Oscillator();
     wave1.setType('sine');
 
     wave2 = new p5.Oscillator();
@@ -80,7 +80,7 @@ function setup() {
     button.touchStarted(toggle7);
   
     button = createButton('도');
-    button.touchStarted(toggle8);*/
+    button.touchStarted(toggle8);
 }
 
 function iosAccess() {
@@ -97,7 +97,7 @@ function draw() {
     text(rotationX, 100, 100);
 }
 
-/*function touchStarted() {
+function touchStarted() {
 
 }
 
@@ -247,4 +247,4 @@ function toggle8() {
             playing8 = false;
         }
     }
-}*/
+}
