@@ -1,9 +1,16 @@
 var wave;
 var button;
-var playing = false;
+var playing1 = false;
+var playing2 = false;
+var playing3 = false;
+var playing4 = false;
+var playing5 = false;
+var playing6 = false;
+var playing7 = false;
+var playing8 = false;
 
 function setup() {
-    createCanvas(250, 350);
+    /*createCanvas(250, 350);*/
     wave = new p5.Oscillator();
     wave.setType('sine');
 
@@ -38,7 +45,7 @@ function draw() {
 }
 
 function touchStarted() {
-    background(255, 255, 0);
+    /*background(255, 255, 0);
     text(touches.length, 200, 200);
 
     text(touches[0].x, 200, 220);
@@ -69,7 +76,7 @@ function touchStarted() {
     text(touches[8].y, 200, 560);
 
     text(touches[9].x, 200, 580);
-    text(touches[9].y, 200, 600);
+    text(touches[9].y, 200, 600);*/
 }
 
 function touchEnded() {
@@ -81,15 +88,15 @@ function toggle1() {
     wave.freq(261.6256);
     //wave.amp(0);
 
-    if (!playing)
+    if (!playing1)
     {
         wave.start();
         wave.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
-        playing = true;
+        playing1 = true;
 
-        if (playing){
+        if (playing1){
             wave.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
-            playing = false;
+            playing1 = false;
         }
     }
 }
@@ -99,15 +106,15 @@ function toggle2() {
     wave.freq(293.6648);
     //wave.amp(0);
 
-    if (!playing)
+    if (!playing2)
     {
         wave.start();
         wave.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
-        playing = true;
+        playing2 = true;
 
-        if (playing){
+        if (playing2){
             wave.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
-            playing = false;
+            playing2 = false;
         }
     }
 }
@@ -117,15 +124,15 @@ function toggle3() {
     wave.freq(329.6276);
     //wave.amp(0);
 
-    if (!playing)
+    if (!playing3)
     {
         wave.start();
         wave.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
-        playing = true;
+        playing3 = true;
 
-        if (playing){
+        if (playing3){
             wave.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
-            playing = false;
+            playing3 = false;
         }
     }
 }
