@@ -14,7 +14,7 @@ function setup() {
     button = createButton('레');
     button.touchStarted(toggle2);
   
-    button = createButton('미');
+    /*button = createButton('미');
     button.touchStarted(toggle3);
   
     /*button = createButton('파');
