@@ -6,8 +6,7 @@ function setup() {
     createCanvas(windowWidth, windowHeight);
     wave = new p5.Oscillator();
     wave.setType('sine');
-    wave.freq(261.6256);
-    wave.amp(0);
+
 
     button = createButton('도');
     button.mousePressed(toggle);
@@ -53,6 +52,9 @@ function touchStarted() {
 }
 
 function toggle() {
+    wave.freq(261.6256);
+    wave.amp(0);
+
     if (!playing)
     {
         wave.start();
