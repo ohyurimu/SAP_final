@@ -21,6 +21,9 @@ var playing6 = false;
 var playing7 = false;
 var playing8 = false;
 
+var rotationX1;
+var currentRotationX1;
+
 function setup() {
     createCanvas(300, 300);
     if (typeof DeviceMotionEvent.requestPermission === "function") {
@@ -112,6 +115,8 @@ function toggle1() {
 
     if (!playing1)
     {
+        currentRotationX1 = rotationX1;
+        text(currentRotationX1, 100, 150);
         wave1.start();
         wave1.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
         playing1 = true;
