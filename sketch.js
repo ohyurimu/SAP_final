@@ -134,7 +134,7 @@ function toggle2() {
     if (!playing2)
     {
         currentRotationX2 = rotationX;
-        text(currentRotationX3, 100, 150);
+        text(currentRotationX2, 100, 150);
         wave2.start();
         wave2.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
         playing2 = true;
