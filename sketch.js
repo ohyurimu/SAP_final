@@ -15,14 +15,14 @@ function setup() {
     button = createButton('도');
     button.mousePressed(toggle);
 
-    wave.freq(293.6648);
+    /*wave.freq(293.6648);
     wave.amp(0);
 
     button = createButton('레');
     button.mousePressed(toggle);
 
     button = createButton('미');
-    button.mousePressed(toggle);
+    button.mousePressed(toggle);*/
 }
 
 function draw() {
