@@ -3,7 +3,7 @@ var button;
 var playing = false;
 
 function setup() {
-    createCanvas(500, 500);
+    createCanvas(250, 300);
     wave = new p5.Oscillator();
     wave.setType('sine');
 
@@ -38,7 +38,7 @@ function draw() {
 }
 
 function touchStarted() {
-    background(0, 0, 0);
+    background(255, 255, 0);
     text(touches.length, 200, 200);
 
     text(touches[0].x, 200, 220);
