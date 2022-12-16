@@ -114,7 +114,7 @@ function toggle1() {
     if (!playing1)
     {
         currentRotationX1 = rotationX;
-        text(currentRotationX1, 100, 100);
+        text(currentRotationX1, 50, 100);
         wave1.start();
         wave1.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
         playing1 = true;
@@ -122,6 +122,7 @@ function toggle1() {
         if (playing1){
             wave1.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
             playing1 = false;
+            text(rotationX, 100, 100);
         }
     }
 }
@@ -134,7 +135,7 @@ function toggle2() {
     if (!playing2)
     {
         currentRotationX2 = rotationX;
-        text(currentRotationX2, 100, 150);
+        text(currentRotationX2, 50, 150);
         wave2.start();
         wave2.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
         playing2 = true;
@@ -146,7 +147,7 @@ function toggle2() {
     }
 }
 
-function toggle3() {
+/*function toggle3() {
   
     wave3.freq(329.6276);
     //wave.amp(0);
@@ -252,4 +253,4 @@ function toggle8() {
             playing8 = false;
         }
     }
-}
+}*/
