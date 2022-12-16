@@ -14,10 +14,10 @@ function setup() {
     button = createButton('레');
     button.mousePressed(toggle2);
   
-    /*button = createButton('미');
+    button = createButton('미');
     button.mousePressed(toggle3);
   
-    button = createButton('파');
+    /*button = createButton('파');
     button.mousePressed(toggle4);
   
     button = createButton('솔');
@@ -93,6 +93,24 @@ function toggle1() {
 function toggle2() {
   
     wave.freq(293.6648);
+    wave.amp(0);
+
+    if (!playing)
+    {
+        wave.start();
+        wave.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
+        playing = true;
+
+        if (playing){
+            wave.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
+            playing = false;
+        }
+    }
+}
+
+function toggle3() {
+  
+    wave.freq(329.6276);
     wave.amp(0);
 
     if (!playing)
