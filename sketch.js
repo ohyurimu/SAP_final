@@ -38,7 +38,7 @@ function draw() {
 }
 
 function touchStarted() {
-    background(255, 255, 0);
+    background(0, 0, 0);
     text(touches.length, 200, 200);
 
     text(touches[0].x, 200, 220);
