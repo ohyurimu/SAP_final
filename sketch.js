@@ -58,11 +58,11 @@ function toggle() {
     if (!playing)
     {
         wave.start();
-        wave.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 1초동안 0>0.5로 커지고 그 이후로 지속.
+        wave.amp(0.5, 0.1); // 0.5:볼륨, 0.1:시간 >>> 볼륨이 0.1초동안 0>0.5로 커지고 그 이후로 지속.
         playing = true;
 
         if (playing){
-            wave.amp(0, 1); // 2.5초동안 0.5에서 0으로 줄어듦.
+            wave.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
             playing = false;
         }
     }
