@@ -106,10 +106,10 @@ function touchStarted() {
 function touchMoved() {
     if (currentRotationX1 >= rotationX) {
         text("뒤로 누웠습니다", 100, 160);
-        /*wave1.freq(246.9417, 261.6256);*/
+        wave1.freq(246.9417, 0.7);
     } else {
         text("앞으로 기울어졌습니다", 100, 180);
-        /*wave1.freq(261.6256, 277.1826);*/
+        wave1.freq(261.6256, 0.7);
     }
 }
 
