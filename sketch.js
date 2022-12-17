@@ -122,16 +122,17 @@ function toggle1() {
 
         if (playing1){
             wave1.amp(0, 1); // 1초동안 0.5에서 0으로 줄어듦.
-            playing1 = false;
-        }
-    }
 
-    if (currentRotationX1 >= rotationX) {
-        text("뒤로 누웠습니다", 100, 160);
-        /*wave1.freq(246.9417, 261.6256);*/
-    } else {
-        text("앞으로 기울어졌습니다", 100, 180);
-        /*wave1.freq(261.6256, 277.1826);*/
+            if (currentRotationX1 >= rotationX) {
+                text("뒤로 누웠습니다", 100, 160);
+                /*wave1.freq(246.9417, 261.6256);*/
+                playing1 = false;
+            } else {
+                text("앞으로 기울어졌습니다", 100, 180);
+                /*wave1.freq(261.6256, 277.1826);*/
+                playing1 = false;
+            }
+        }
     }
 }
 
