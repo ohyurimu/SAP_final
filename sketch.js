@@ -95,6 +95,7 @@ function iosAccess() {
 }
 
 function draw() {
+    background(255, 255, 0);
     if (!permission) return;
     text(rotationX, 100, 100);
 }
