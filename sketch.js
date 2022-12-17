@@ -27,7 +27,7 @@ var currentRotationX2;
 function setup() {
     createCanvas(300, 300);
     if (typeof DeviceMotionEvent.requestPermission === "function") {
-        background(255, 0, 0);
+        background(255, 255, 0);
         button = createButton("Click to IOS sensor");
         button.mousePressed(iosAccess);
     } else {
