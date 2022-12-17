@@ -109,7 +109,7 @@ function touchMoved() {
         wave1.freq(246.9417, 0.7);
     } else {
         text("앞으로 기울어졌습니다", 100, 180);
-        wave1.freq(261.6256, 0.7);
+        wave1.freq(277.1826, 0.7);
     }
 }
 
