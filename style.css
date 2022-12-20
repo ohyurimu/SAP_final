@@ -5,3 +5,8 @@ html, body {
 canvas {
   display: flex;
 }
+
+button {
+  border-radius: 0;
+  position: fixed;
+}
