@@ -168,8 +168,8 @@ function touchStarted() {
 // 터치 중
 function touchMoved() {
   
-    // rotationX 이용한 방법
-    // 빠르게 앞뒤로 흔들어야 하는 가속도 센서를 이용하는 것보다 단순히 기울어진 정도인 rotationX값을 이용하는 것이 연주시 훨씬 편할 것 같아서 이 방법을 사용함.
+    // rotation값을 이용한 방법
+    // 빠르게 앞뒤로 흔들어야 하는 가속도 센서를 이용하는 것보다 단순히 기울어진 정도인 rotation값을 이용하는 것이 연주시 훨씬 편할 것 같아서 이 방법을 사용함.
     wave1.freq(frequency1);
     wave2.freq(frequency2);
     wave3.freq(frequency3);
