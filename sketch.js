@@ -310,19 +310,19 @@ function touchEnded() {
 
 function deviceMoved() {
     // 기울기값을 주파수에 매핑
-    frequency1 = map(rotationX, -90, 90, 246.9417, 277.1826);
-    frequency2 = map(rotationX, -90, 90, 261.6256, 293.6648);
-    frequency3 = map(rotationX, -90, 90, 277.1826, 311.1270);
-    frequency4 = map(rotationX, -90, 90, 293.6648, 329.6276);
-    frequency5 = map(rotationX, -90, 90, 311.1270, 349.2282);
-    frequency6 = map(rotationX, -90, 90, 329.6276, 369.9944);
-    frequency7 = map(rotationX, -90, 90, 349.2282, 391.9954);
-    frequency8 = map(rotationX, -90, 90, 369.9944, 415.3047);
-    frequency9 = map(rotationX, -90, 90, 391.9954, 440.0000);
-    frequency10 = map(rotationX, -90, 90, 415.3047, 466.1638);
-    frequency11 = map(rotationX, -90, 90, 440.0000, 493.8833);
-    frequency12 = map(rotationX, -90, 90, 466.1638, 523.2511);
-    frequency13 = map(rotationX, -90, 90, 493.8833, 554.3653);
+    frequency1 = map(rotationY, -90, 90, 246.9417, 277.1826);
+    frequency2 = map(rotationY, -90, 90, 261.6256, 293.6648);
+    frequency3 = map(rotationY, -90, 90, 277.1826, 311.1270);
+    frequency4 = map(rotationY, -90, 90, 293.6648, 329.6276);
+    frequency5 = map(rotationY, -90, 90, 311.1270, 349.2282);
+    frequency6 = map(rotationY, -90, 90, 329.6276, 369.9944);
+    frequency7 = map(rotationY, -90, 90, 349.2282, 391.9954);
+    frequency8 = map(rotationY, -90, 90, 369.9944, 415.3047);
+    frequency9 = map(rotationY, -90, 90, 391.9954, 440.0000);
+    frequency10 = map(rotationY, -90, 90, 415.3047, 466.1638);
+    frequency11 = map(rotationY, -90, 90, 440.0000, 493.8833);
+    frequency12 = map(rotationY, -90, 90, 466.1638, 523.2511);
+    frequency13 = map(rotationY, -90, 90, 493.8833, 554.3653);
 }
 
 function key1() {
