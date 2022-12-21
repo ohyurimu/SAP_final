@@ -49,10 +49,6 @@ function setup() {
         button = createButton("Click to IOS sensor");
         button.mousePressed(iosAccess);
         button.style('margin: 50px 5% 0 5%; top: 0px; width: 90%; height: 50px;');
-    } else {
-        createCanvas(333, 200);
-        background(0, 255, 0);
-        text("IOS16 디바이스가 아닙니다.", 100, 100);
     }
 
     wave1 = new p5.Oscillator();
@@ -267,38 +263,6 @@ function touchMoved() {
     } else {
         wave13.amp(0);
     }
-
-    // ***처음에 구현한 방법***
-    /*if (accelerationX > 1) { // 뒤로 기울이면 주파수 낮아지게 (수평 오차값 때문에 0이 아닌 1, -1로 설정)
-        wave1.freq(246.9417);
-        wave2.freq(261.6256);
-        wave3.freq(277.1826);
-        wave4.freq(293.6648);
-        wave5.freq(311.1270);
-        wave6.freq(329.6276);
-        wave7.freq(349.2282);
-        wave8.freq(369.9944);
-        wave9.freq(391.9954);
-        wave10.freq(415.3047);
-        wave11.freq(440.0000);
-        wave12.freq(466.1638);
-        wave13.freq(493.8833);
-    }
-    if (accelerationX < -1){ // 앞으로 기울이면 주파수 높아지게
-        wave1.freq(277.1826);
-        wave2.freq(293.6648);
-        wave3.freq(311.1270);
-        wave4.freq(329.6276);
-        wave5.freq(349.2282);
-        wave6.freq(369.9944);
-        wave7.freq(391.9954);
-        wave8.freq(415.3047);
-        wave9.freq(440.0000);
-        wave10.freq(466.1638);
-        wave11.freq(493.8833);
-        wave12.freq(523.2511);
-        wave13.freq(554.3653);
-    }*/
 }
 
 // 터치 종료
